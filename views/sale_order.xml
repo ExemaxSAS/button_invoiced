@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="sale_order_change_status_invoice_inherit" model="ir.ui.view">
+            <field name="name">sale.order.view.form.inherit</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <button name="action_draft" position="after">
+                    <button string="Forzar Estado Facturado" type="object" name="change_invoices_state" />
+                </button>
+            </field>
+        </record>
+    
+    </data>
+</odoo>
